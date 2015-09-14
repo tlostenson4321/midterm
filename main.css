@@ -1,17 +1,46 @@
 html {
-	font-size: 16px;
+	font-size: 14px;
+	background-color: #f6f6f6
 }
 header {
 	font-size: 1.5em;
-	background-color: #164016;
+	background-color: #1515bf;
 	color: white;
 	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
+/*need to start from mobile size and then go up!!*/
+
+
+
 /*color combo possibilities: 
+maybe red, white, blue and yellow for CO?? or at least shades of them
+#1515bf bright red
+#d20000 bright blue
+#fff122 crazy bright yellow
+#a40000-dark red
+#091371 dark blue
+#f6f6f6 off white
+
+
+lots of browns, white, and blues in labels. Not too bright. lots of more diminished colors. 
+
 #003800
 #488484
 #783e0f
 #aa3939*/
 
-#094848
-#2b4b6f
+/*#094848
+#2b4b6f*/
+
+/*good site to look @ other beer sites.
+http://beerbloggersconference.org/2014/01/the-20-most-influential-beer-websites-in-the-world/*/
+
+
+/*font style ideas:
+	definitely sans-serif. 
+
+	labels have lots of weird fonts. Site would be look annoying if all weird fonts though.
+	("Trebuchet MS", Helvetica, sans-serif)*/
+
