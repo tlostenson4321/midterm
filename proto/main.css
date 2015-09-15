@@ -1,0 +1,34 @@
+html {
+	font-size: 14px;
+	background-color: #f6f6f6
+}
+.head {
+	font-size: 1.5em;
+	background-color: #1515bf;
+	color: white;
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+body {
+	width: 100vw;
+}
+.select {
+	color:white;
+	background-color: #a40000;
+}
+.select-option {
+	background-color: #fff122;
+	color:#1515bf;
+}
+.input {
+	width: 80vw;
+	border-radius: 5px
+}
+.button {
+	background-color:  #fff122;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #1515bf;
+	border:1px solid #1515bf;
+	border-radius: 5px;
+}
