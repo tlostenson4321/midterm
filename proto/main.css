@@ -2,6 +2,7 @@ html {
 	font-size: 14px;
 	/*background-color: #f6f6f6;*/
 	background-image: url(snow-beer.jpg);
+		/*will need to change picture width as screen gets bigger so it doesn't repeat.*/
 }
 body {
 	width: 100vw;
@@ -103,9 +104,18 @@ body {
 .content {
 	z-index: 10;
 	color: white;
+}
+.content-list {
+	list-style-type: none;
+	text-align: center;
 	text-shadow:   
 	-1px -1px 0 #000000,
     1px -1px 0 #000000,
     -1px 1px 0 #000000,
     1px 1px 0 #000000;
+	
+}
+.content-item {
+    margin: 10px 0px;
+
 }
