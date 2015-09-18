@@ -4,20 +4,30 @@ html {
 	background-image: url(snow-beer.jpg);
 }
 .nav {
-	background-color: rgba(111, 111, 162, 0.3); 
-	color: #18182b;
+	text-align: center;
+	width: 80vw;
 }
 .nav-item {
-	display: inline-block;
-
+	/*display: inline-block;*/
+	background-color: rgba(234, 220, 12, 0.5);
+	border: 1px solid rgba(234, 220, 12, 0);
+	margin: 10px 0px 10px 30px;
+	padding: 10px;
+	list-style-type: none;
 }
 .head {
-	font-size: 3em;
 	background-color: rgba(52, 52, 119, 0.5);
 	color: white;
 	text-align: center;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	padding: 10px;
+}
+.head-big {
+	font-size: 3rem;
+
+}
+.head-small {
+	font-size: 2rem;
 }
 body {
 	width: 100vw;
@@ -31,24 +41,31 @@ body {
 	height: 34px;
 	border-radius: 4px;
 	box-sizing: content-box;
+	margin-left: 10px;
 }
+/*Check this @ home.
 .select-option {
 	color:#1515bf;
-}
+}*/
 .input {
 	width: 80vw;
 	border-radius: 5px;
 	background-color: rgba(0,0,0,0.2);
 	color: white;
+	margin-left: 10px;
+}
+.input:focus {
+	background-color: rgba(0,0,0, 0.6);
+	box-shadow:none;
 }
 .button {
 	font-family: sans-serif;
 	font-weight: bold;
-	border:1px solid #1515bf;
 	border-radius: 5px;
 }
 .yellow-button {
-	background-color:  #eadc0c;
+	border:1px solid #1515bf;
+	background-color: rgb(234, 220, 12);
 	color: #1515bf;
 
 }
@@ -74,8 +91,6 @@ body {
 	left: 27vw;
 	border: 10px solid rgb(20 , 20 , 102) ;
 	padding: 5vw 10vw;
-
-
 }
 .lightbox-header {
 	font-size: 1em;
