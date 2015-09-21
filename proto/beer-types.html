@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="beerApp">
 <head>
 <meta charset="utf-8">
 	<title>Beers ya need</title>
 	 <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body>
+<body ng-controller="beerTypeController">
 <header class="head head-big"> Know where to find your beer and just need beer ideas?</header>
 	<nav class= "nav">
   		<ul>
@@ -31,6 +31,10 @@
  -->
 	<div class="beer-types">
 		<ul class="beer-types-list">
+			<li class="beer-types-listitem"><a href="">Balanced</a></li>
+				<ul>
+					<li>{{Beer Type}}</li>
+				</ul>
 			<li class="beer-types-listitem"><a href="">Fruity</a></li>
 				<ul>
 					<li>{{Beer Type}}</li>
@@ -57,7 +61,7 @@
 				</ul>
 		</ul>
 	</div>
-
+<div ng-repeat="beer ">
 	<div>
 		Amber 
 	</div>

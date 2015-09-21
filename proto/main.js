@@ -1,7 +1,7 @@
 $(document).on('ready', function() {
   
 });
-
+angular.module('beerApp', [])
 // need to add an ng-hide on an ng-click for lightbox.
 // 	if age is over 21 will hide. 
 // need to create an ng-hide for all selects after each is entered.
@@ -11,79 +11,82 @@ var beerArray = [
 	{
 		Name : Amber
 
-		Flavor : 
+		Flavor : ['Malty/Rich', 'Hoppy']
 	}
 	{
 		Name : Blonde
 
-		Flavor : 
+		Flavor : ['Light/Crisp', 'Fruity', 'Balanced']
 	}
 	{
 		Name : Brown
 
-		Flavor : 
+		Flavor : ['Malty/Rich']
 	}
 	{
 		Name : Cider
 
-		Flavor : 
-	}
-	{
-		Name : Cream
-
-		Flavor : 
+		Flavor : ['Fruity', 'Light/Crisp']
 	}
 	{
 		Name : Fruit
 
-		Flavor : 
+		Flavor : ['Fruity']
 	}
 	{
 		Name : India Pale Ale/IPA
 
-		Flavor : 
+		Flavor : ['Hoppy', 'Light/Crisp']
 	}
 	{
 		Name : Pale Ales
 
-		Flavor : 
+		Flavor : ['Hoppy', 'Light/Crisp', 'Fruity', 'Balanced']
 	}
 	{
-		Name : 
+		Name : Pilsner
 
-		Flavor : 
+		Flavor : ['Hoppy', 'Light/Crisp']
 	}
 	{
-		Name : 
+		Name : Porter
 
-		Flavor : 
+		Flavor : ['Malty/Rich', 'Heavy']
 	}
 	{
-		Name : 
+		Name : Sour
 
-		Flavor : 
+		Flavor : ['Sour', 'Fruity']
 	}
 	{
-		Name : 
+		Name : Stout
 
-		Flavor : 
+		Flavor : ['Heavy']
 	}
 	{
-		Name : 
+		Name : Wheat
 
-		Flavor : 
+		Flavor : ['Light/Crisp', 'Fruity', ]
+	}
+]
+var beerType = [
+	{
+		Name : Light
+
+		Type: ['Wheat', 'Fruit', 'Blonde' ]
 	}
 	{
-		Name : 
+		Name : Medium
 
-		Flavor : 
+		Type : ['Amber', 'Pilsner', 'Pale Ale']
 	}
 	{
-		Name : 
+		Name : Strong
 
-		Flavor : 
+		Type : ['Stout', 'Sour', 'Porter', 'IPA' ]
 	}
 
 
 
 ]
+angular.module('myApp').controller('beerTypeController', ['$scope', beerTypeController])
