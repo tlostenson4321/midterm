@@ -7,3 +7,83 @@ $(document).on('ready', function() {
 // need to create an ng-hide for all selects after each is entered.
 // 		after where you want to get beer pops up then have the types of beer pop up.
 	
+var beerArray = [
+	{
+		Name : Amber
+
+		Flavor : 
+	}
+	{
+		Name : Blonde
+
+		Flavor : 
+	}
+	{
+		Name : Brown
+
+		Flavor : 
+	}
+	{
+		Name : Cider
+
+		Flavor : 
+	}
+	{
+		Name : Cream
+
+		Flavor : 
+	}
+	{
+		Name : Fruit
+
+		Flavor : 
+	}
+	{
+		Name : India Pale Ale/IPA
+
+		Flavor : 
+	}
+	{
+		Name : Pale Ales
+
+		Flavor : 
+	}
+	{
+		Name : 
+
+		Flavor : 
+	}
+	{
+		Name : 
+
+		Flavor : 
+	}
+	{
+		Name : 
+
+		Flavor : 
+	}
+	{
+		Name : 
+
+		Flavor : 
+	}
+	{
+		Name : 
+
+		Flavor : 
+	}
+	{
+		Name : 
+
+		Flavor : 
+	}
+	{
+		Name : 
+
+		Flavor : 
+	}
+
+
+
+]

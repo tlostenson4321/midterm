@@ -119,3 +119,45 @@ body {
     margin: 10px 0px;
 
 }
+.beer-types{
+	border: 3px solid white;
+}
+.beer-types-list {
+	color: white;
+}
+.beer-types-listitem {
+	border-bottom: none;
+	color: white;
+
+}
+
+
+/*Card flip CSS.*/
+
+/*.portfolio-item:hover .front{
+	transform: rotateY(180deg);
+	transform-style: preserve-3d;
+	transition: transform 1s;
+	z-index: 0;
+}
+.portfolio-item:hover .back{
+	transform: rotateY( 0deg) ;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+}
+
+.front {
+	position: absolute;
+	z-index: 1;
+	transition: transform 1s;
+	backface-visibility: hidden;
+}
+
+.back {
+	position: relative;
+	transition: transform 1s;
+	backface-visibility: hidden;
+	transform: rotateY( 180deg);
+}*/
+
+
