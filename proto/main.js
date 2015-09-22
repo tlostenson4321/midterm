@@ -85,8 +85,7 @@ var beerStrength = [
 
 		Type : ['Stout', 'Sour', 'Porter', 'IPA' ]
 	}
-
-
-
 ]
+
+// Need a for loop for each beer flavor. Will pull beers for beerArray that have that flavor listed.
 angular.module('myApp').controller('beerTypeController', ['$scope', beerTypeController])
