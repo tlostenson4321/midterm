@@ -15,55 +15,51 @@
     		<li class= "nav-item button"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
   		</ul>
 	</nav>
-	<h3 class="head head-small"> What type of flavor are you wanting?</h3>
-<!-- 	<select class="select">
-		<option class="select-option">-Select One-</option>
-		<option class="select-option">Fruity</option>
-		<option class="select-option">Heavy</option>
-		<option class="select-option">Hoppy</option>
-		
-		<option class="select-option">Light/Crisp</option>
-		
-		<option  class="select-option">Malty/Rich</option>
-		<option class="select-option">Sour</option>
-		
-	</select>
- -->
+	<h3 class="head head-small"> What type of flavor are you craving?</h3>
+
 	<div class="beer-types">
 		<ul class="beer-types-list">
-			<li class="beer-types-listitem"><a href="">Balanced</a></li>
-				<ul>
-					<li>{{Beer Type}}</li>
+			<li class="beer-types-listitem"><a href="" class="beer-types-link">Balanced</a>
+				<ul class="inner-list">
+					<li class="inner-listitem">{{Beer Name}}</li>
 				</ul>
-			<li class="beer-types-listitem"><a href="">Fruity</a></li>
-				<ul>
-					<li>{{Beer Type}}</li>
+			</li>
+			<li class="beer-types-listitem"><a href="" class="beer-types-link">Fruity</a>
+				<ul class="inner-list">
+					<li class="inner-listitem">{{Beer Name}}</li>
 				</ul>
-			<li class="beer-types-listitem"><a href="">Heavy</a></li>
-				<ul>
-					<li>{{Beer Type}}</li>
+			</li>
+			<li class="beer-types-listitem"><a href="" class="beer-types-link">Heavy</a>
+				<ul class="inner-list">
+					<li class="inner-listitem">{{Beer Name}}</li>
 				</ul>
-			<li class="beer-types-listitem"><a href="">Hoppy</a></li>
-				<ul>
-					<li>{{Beer Type}}</li>
+			</li>
+			<li class="beer-types-listitem"><a href="" class="beer-types-link">Hoppy</a>
+				<ul class="inner-list">
+					<li class="inner-listitem">{{Beer Name}}</li>
 				</ul>
-			<li class="beer-types-listitem"><a href="">Light/Crisp</a></li>
-				<ul>
-					<li>{{Beer Type}}</li>
+			</li>
+			<li class="beer-types-listitem"><a href="" class="beer-types-link">Light/Crisp</a>
+				<ul class="inner-list">
+					<li class="inner-listitem">{{Beer Name}}</li>
 				</ul>
-			<li class="beer-types-listitem"><a href="">Malty/Rich</a></li>
-				<ul>
-					<li>{{Beer Type}}</li>
+			</li>
+			<li class="beer-types-listitem"><a href="" class="beer-types-link">Malty/Rich</a>
+				<ul class="inner-list">
+					<li class="inner-listitem">{{Beer Name}}</li>
 				</ul>
-			<li class="beer-types-listitem"><a href="">Sour</a></li>
-				<ul>
-					<li>{{Beer Type}}</li>
+			</li>
+			<li class="beer-types-listitem"><a href="" class="beer-types-link">Sour</a>
+				<ul class="inner-list">
+					<li class="inner-listitem">{{Beer Name}}</li>
 				</ul>
+			</li>
 		</ul>
 	</div>
-<div ng-repeat="beer ">
+
+<div ng-repeat="beer in beerArray">
 	<div>
-		Amber 
+		beer name and beer flavor.
 	</div>
 	<div>
 		Blonde
@@ -78,7 +74,6 @@
     India Pale Ale/IPA
     Pale Ales
     Pilsner
-    Red
     Sour
     Stout
     Wheat

@@ -6,82 +6,82 @@ angular.module('beerApp', [])
 // 	if age is over 21 will hide. 
 // need to create an ng-hide for all selects after each is entered.
 // 		after where you want to get beer pops up then have the types of beer pop up.
-	
+	This can just be the page for beer-types. can do different js pages for each page of html.
 var beerArray = [
 	{
-		Name : Amber
+		Name : 'Amber'
 
 		Flavor : ['Malty/Rich', 'Hoppy']
 	}
 	{
-		Name : Blonde
+		Name : 'Blonde'
 
 		Flavor : ['Light/Crisp', 'Fruity', 'Balanced']
 	}
 	{
-		Name : Brown
+		Name : 'Brown'
 
 		Flavor : ['Malty/Rich']
 	}
 	{
-		Name : Cider
+		Name : 'Cider'
 
 		Flavor : ['Fruity', 'Light/Crisp']
 	}
 	{
-		Name : Fruit
+		Name : 'Fruit'
 
 		Flavor : ['Fruity']
 	}
 	{
-		Name : India Pale Ale/IPA
+		Name : 'India Pale Ale/IPA'
 
 		Flavor : ['Hoppy', 'Light/Crisp']
 	}
 	{
-		Name : Pale Ales
+		Name : 'Pale Ales'
 
 		Flavor : ['Hoppy', 'Light/Crisp', 'Fruity', 'Balanced']
 	}
 	{
-		Name : Pilsner
+		Name : 'Pilsner'
 
 		Flavor : ['Hoppy', 'Light/Crisp']
 	}
 	{
-		Name : Porter
+		Name : 'Porter'
 
 		Flavor : ['Malty/Rich', 'Heavy']
 	}
 	{
-		Name : Sour
+		Name : 'Sour'
 
 		Flavor : ['Sour', 'Fruity']
 	}
 	{
-		Name : Stout
+		Name : 'Stout'
 
 		Flavor : ['Heavy']
 	}
 	{
-		Name : Wheat
+		Name : 'Wheat'
 
 		Flavor : ['Light/Crisp', 'Fruity', ]
 	}
 ]
-var beerType = [
+var beerStrength = [
 	{
-		Name : Light
+		Name : 'Light'
 
 		Type: ['Wheat', 'Fruit', 'Blonde' ]
 	}
 	{
-		Name : Medium
+		Name : 'Medium'
 
 		Type : ['Amber', 'Pilsner', 'Pale Ale']
 	}
 	{
-		Name : Strong
+		Name : 'Strong'
 
 		Type : ['Stout', 'Sour', 'Porter', 'IPA' ]
 	}

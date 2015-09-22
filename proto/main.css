@@ -7,6 +7,7 @@ html {
 body {
 	width: 100vw;
 	background-color: transparent;
+	color: white;
 }
 .nav {
 	text-align: center;
@@ -113,6 +114,7 @@ body {
     1px -1px 0 #000000,
     -1px 1px 0 #000000,
     1px 1px 0 #000000;
+    padding: 0;
 	
 }
 .content-item {
@@ -121,14 +123,38 @@ body {
 }
 .beer-types{
 	border: 3px solid white;
+	height: 100px;
 }
 .beer-types-list {
-	color: white;
+	list-style-type: none;
+	position: relative;
 }
 .beer-types-listitem {
-	border-bottom: none;
+	display: inline-block;
+}
+.beer-types-listitem:hover {
+	background-color: black;
+}
+.beer-types-link {
 	color: white;
 
+}
+.beer-types-listitem:hover .inner-list {
+	display: block;
+}
+.inner-list {
+	display:none;
+	position: absolute;
+	background-color: black;
+	border: 1px solid white;
+	border-top: 0;
+}
+.inner-listitem {
+	display: block;
+	color: white;
+}
+.inner-listitem:hover {
+	color:red;
 }
 
 
