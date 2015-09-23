@@ -1,91 +1,40 @@
-$(document).on('ready', function() {
+// $(document).on('ready', function() {
   
-});
-angular.module('beerApp', [])
+// });
+angular.module('beeryApp', [])
+// angular.module('beerApp')
 // need to add an ng-hide on an ng-click for lightbox.
 // 	if age is over 21 will hide. 
 // need to create an ng-hide for all selects after each is entered.
 // 		after where you want to get beer pops up then have the types of beer pop up.
-	This can just be the page for beer-types. can do different js pages for each page of html.
-var beerArray = [
-	{
-		Name : 'Amber'
+	// This can just be the page for beer-types. can do different js pages for each page of html.
 
-		Flavor : ['Malty/Rich', 'Hoppy']
-	}
-	{
-		Name : 'Blonde'
 
-		Flavor : ['Light/Crisp', 'Fruity', 'Balanced']
-	}
-	{
-		Name : 'Brown'
 
-		Flavor : ['Malty/Rich']
-	}
-	{
-		Name : 'Cider'
+angular.module('beeryApp')
+.controller('breweryController', ['$scope', function($scope){
 
-		Flavor : ['Fruity', 'Light/Crisp']
-	}
-	{
-		Name : 'Fruit'
+console.log('hello')	
+}])
+// }
 
-		Flavor : ['Fruity']
-	}
-	{
-		Name : 'India Pale Ale/IPA'
+// var beerStrength = [
+// 	{
+// 		Name : 'Light'
 
-		Flavor : ['Hoppy', 'Light/Crisp']
-	}
-	{
-		Name : 'Pale Ales'
+// 		Type: ['Wheat', 'Fruit', 'Blonde' ]
+// 	}
+// 	{
+// 		Name : 'Medium'
 
-		Flavor : ['Hoppy', 'Light/Crisp', 'Fruity', 'Balanced']
-	}
-	{
-		Name : 'Pilsner'
+// 		Type : ['Amber', 'Pilsner', 'Pale Ale']
+// 	}
+// 	{
+// 		Name : 'Strong'
 
-		Flavor : ['Hoppy', 'Light/Crisp']
-	}
-	{
-		Name : 'Porter'
-
-		Flavor : ['Malty/Rich', 'Heavy']
-	}
-	{
-		Name : 'Sour'
-
-		Flavor : ['Sour', 'Fruity']
-	}
-	{
-		Name : 'Stout'
-
-		Flavor : ['Heavy']
-	}
-	{
-		Name : 'Wheat'
-
-		Flavor : ['Light/Crisp', 'Fruity', ]
-	}
-]
-var beerStrength = [
-	{
-		Name : 'Light'
-
-		Type: ['Wheat', 'Fruit', 'Blonde' ]
-	}
-	{
-		Name : 'Medium'
-
-		Type : ['Amber', 'Pilsner', 'Pale Ale']
-	}
-	{
-		Name : 'Strong'
-
-		Type : ['Stout', 'Sour', 'Porter', 'IPA' ]
-	}
-]
+// 		Type : ['Stout', 'Sour', 'Porter', 'IPA' ]
+// 	}
+// ]
+// var BeerFinder = function(name, flavor)
 
 // Need a for loop for each beer flavor. Will pull beers for beerArray that have that flavor listed.
-angular.module('myApp').controller('beerTypeController', ['$scope', beerTypeController])

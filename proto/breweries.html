@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="beeryApp">
 <head>
 <meta charset="utf-8">
 	<title>Breweries are home</title>
 	 <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="angular.min.js"></script>
 </head>
-<body>
+<body ng-controller="breweryController">
 <header class="head head-big">Want to get a beer from the source?</header>
 	<nav class= "nav">
   		<ul>
@@ -18,13 +19,13 @@
   <div class="content">
     <h4 class="head head-small"> Boulder</h4>
     <ul class="content-list">
-      <li class= "content-item">Avery Brewing Company</li>
-      <li>BRU Boulder </li>
+      <li class= "content-item" ng-repeat="brewery in breweries">{{brewery.name}}</li>
+      
       <!-- need to make an array of objects for the breweries! Not typing all of these out!!! -->
       <!-- Within each object I need to do Name, website, specialties, highest rated beers per google? -->
 <!-- go off of https://www.facebook.com/notes/keep-boulder-fun/boulder-breweries-and-brew-pubs-a-comprehensive-list/10151265206094204 or  https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=breweries+in+boulder&rflfq=1&tbm=lcl -->
 </ul>
 </div>
-
+<script src ="brewery.js"></script> 
 </body>
 </html>

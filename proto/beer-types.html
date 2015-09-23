@@ -5,6 +5,7 @@
 	<title>Beers ya need</title>
 	 <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="angular.min.js"></script>
 </head>
 <body ng-controller="beerTypeController">
 <header class="head head-big"> Know where to find your beer and just need beer ideas?</header>
@@ -21,64 +22,58 @@
 		<ul class="beer-types-list">
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Balanced</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">{{Beer Name}}</li>
+					<li class="inner-listitem">Beer Name</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Fruity</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">{{Beer Name}}</li>
+					<li class="inner-listitem">Beer name</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Heavy</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">{{Beer Name}}</li>
+					<li class="inner-listitem">beer name</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Hoppy</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">{{Beer Name}}</li>
+					<li class="inner-listitem">Beer Name</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Light/Crisp</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">{{Beer Name}}</li>
+					<li class="inner-listitem">Beer Name</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Malty/Rich</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">{{Beer Name}}</li>
+					<li class="inner-listitem">Beer Name</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Sour</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">{{Beer Name}}</li>
+					<li class="inner-listitem">Beer Name</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
 
-<div ng-repeat="beer in beerArray">
 	<div>
-		beer name and beer flavor.
+		<ul>
+			<li  ng-repeat="beer in beers">
+		
+				<h3>{{beer.name}}</h3>
+					<ul>
+						<li ng-repeat="flavor in beer.flavors">{{flavor}}</li>
+					</ul>
+				<h4>{{beer.strength}}</h4>
+		
+			</li>
+		</ul>
+		
 	</div>
-	<div>
-		Blonde
-	</div>
-	<div>
-		Brown
-	</div>
-	Can do an array of objects for all of the beer types.
-	Cider
-    Cream
-    Fruit
-    India Pale Ale/IPA
-    Pale Ales
-    Pilsner
-    Sour
-    Stout
-    Wheat
-    Light
-    Strong
+
+   <script src ="beer-types.js"></script> 
 </body>
 </html>
 
