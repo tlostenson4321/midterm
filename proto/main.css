@@ -2,7 +2,10 @@ html {
 	font-size: 14px;
 	/*background-color: #f6f6f6;*/
 	background-image: url(snow-beer.jpg);
-		/*will need to change picture width as screen gets bigger so it doesn't repeat.*/
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: rgba(52, 52, 119, 1);
+	/*background-position: center; this is for larger*/
 }
 body {
 	width: 100vw;
@@ -121,69 +124,12 @@ body {
     margin: 10px 0px;
 
 }
-.beer-types{
-	border: 3px solid white;
-	height: 100px;
-}
-.beer-types-list {
-	list-style-type: none;
-	position: relative;
-}
-.beer-types-listitem {
-	display: inline-block;
-}
-.beer-types-listitem:hover {
-	background-color: black;
-}
-.beer-types-link {
-	color: white;
-
-}
-.beer-types-listitem:hover .inner-list {
-	display: block;
-}
-.inner-list {
-	display:none;
-	position: absolute;
-	background-color: black;
-	border: 1px solid white;
-	border-top: 0;
-}
-.inner-listitem {
-	display: block;
-	color: white;
-}
-.inner-listitem:hover {
-	color:red;
-}
 
 
-/*Card flip CSS.*/
 
-/*.portfolio-item:hover .front{
-	transform: rotateY(180deg);
-	transform-style: preserve-3d;
-	transition: transform 1s;
-	z-index: 0;
-}
-.portfolio-item:hover .back{
-	transform: rotateY( 0deg) ;
-	transform-style: preserve-3d;
-	transition: transform 1s;
-}
 
-.front {
-	position: absolute;
-	z-index: 1;
-	transition: transform 1s;
-	backface-visibility: hidden;
-}
 
-.back {
-	position: relative;
-	transition: transform 1s;
-	backface-visibility: hidden;
-	transform: rotateY( 180deg);
-}*/
+
+
 
 
