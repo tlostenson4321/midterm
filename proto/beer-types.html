@@ -57,22 +57,29 @@
 			</li>
 		</ul>
 	</div>
-
+<div>
 	<div>
 		<ul>
 			<li  ng-repeat="beer in beers">
-		
+			
 				<h3>{{beer.name}}</h3>
 					<ul>
 						<li ng-repeat="flavor in beer.flavors">{{flavor}}</li>
 					</ul>
 				<h4>{{beer.strength}}</h4>
-		
+				
 			</li>
 		</ul>
 		
 	</div>
+	<div>
+		<ul>
+			<li ng-repeat="picture in pictures">
+				<img src='{{picture}}'>
 
+			</li>
+	</div>
+</div>
    <script src ="beer-types.js"></script> 
 </body>
 </html>

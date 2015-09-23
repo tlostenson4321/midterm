@@ -6,7 +6,7 @@ angular.module('beerApp')
 			this.name = name
 			this.flavors = flavors
 			this.strength = strength
-			
+
 			beerList.push(this)
 			}
 			var amber = new Beer('Amber', ['Malty/Rich', 'Hoppy'], 'Medium')
@@ -28,16 +28,41 @@ angular.module('beerApp')
 		}
 
 
+
 console.log(beerList)
 
 })
 
+
 angular.module('beerApp')
-.controller('beerTypeController', ['$scope', 'beerFactory', function($scope, beerFactory){
+	.factory('picFactory', function(){
+	var picArray = []
+		var Picture = function(picture) { 
+		this.picture = picture
+
+		picArray.push(this)
+
+	}
+			// var picAmber = new Picture('http://learn.kegerator.com/wp-content/uploads/2013/11/red_amber_ale.jpg') Will work but need to have saved images not links. 
+
+		return {
+			Picture : Picture,
+			picArray : picArray
+		}	
+
+})
+
+
+
+
+
+angular.module('beerApp')
+.controller('beerTypeController', ['$scope', 'beerFactory', 'picFactory', function($scope, beerFactory, picFactory){
 	
 console.log('hello')
 $scope.beers = beerFactory.beerList
 console.log(beerFactory.beerList)
+$scope.pictures = picFactory.picArray
 
 
 
