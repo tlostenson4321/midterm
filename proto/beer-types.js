@@ -77,7 +77,7 @@ angular.module('beerApp')
 		}
 
 	})
-console.log(cityArray)
+
 
 
 
