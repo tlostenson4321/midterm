@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 	<title>Beers ya need</title>
 	 <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="total.css">
   <link rel="stylesheet" type="text/css" href="beer-types.css">
   <script src="angular.min.js"></script>
 </head>
@@ -58,28 +58,34 @@
 			</li>
 		</ul>
 	</div>
-<div class ="beer-flip">
+<div>
 	<div class="front">
 		<ul>
-			<li  ng-repeat="beer in beers">
+			<!-- added the class for when ng-click is added it will work separately. -->
+			<li ng-repeat="beer in beers"  class ="beer-flip">
 			
 				<h3>{{beer.name}}</h3>
 					<ul>
 						<li ng-repeat="flavor in beer.flavors">{{flavor}}</li>
 					</ul>
 				<h4>{{beer.strength}}</h4>
-				
+				<!-- <ul>
+					Can't make this work!!!!!!
+					<li ng-repeat="picture in pictures">
+						<img ng-src='{{picture}}'>
+					</li>
+				</ul> -->
 			</li>
 		</ul>
 		
 	</div>
-	<div class="back">
+	<!-- <div class="back">
 		<ul>
-			<li ng-repeat="picture in pictures">
+			<li ng-repeat=>
 				<img src='{{picture}}'>
 
 			</li>
-	</div>
+	</div> -->
 </div>
    <script src ="beer-types.js"></script> 
 </body>

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="beerApp">
 <head>
   <meta charset="utf-8">
   <title>In need of beer</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="total.css">
   <link rel="stylesheet" type="text/css" href="main.css">
+   <script src="angular.min.js"></script>
 </head>
-<body>
+<body ng-controller="beerFinderController">
 <!-- This is my lightbox stuff --><!-- command + option +{ -->
 <!-- Lightbox info  needs to be commented out until time for angular -->
 <!-- <div class="lightbox">
@@ -168,6 +170,11 @@
     <li class= "nav-item button"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
   </ul>
 </nav>
+
+
+
+
+
 <!-- Beer location -->
 <h1 class="head head-small"> Would you prefer a brewery or tap room?</h1>
 <!-- <img href= Go to pexels for free photos. -->
@@ -177,45 +184,36 @@
     <option class="select-option">Tap Room</option>
     
   </select>
+
+
+
+
 <!-- Beer types  -->
+<div>
 <h3 class="head head-small">What type of beer are you in the mood for?</h3>
-  <select class="select">
-    <option class="select-option"> -Select One-</option>
-    <option class="select-option">Amber/Red</option>
-    <option class="select-option">Blonde</option>
-    <option class="select-option">Brown</option>
-    <option class="select-option">Cider</option>
-    <option class="select-option">Fruit</option>
-    <option class="select-option">India Pale Ale/IPA</option>
-    <option class="select-option">Pale Ales</option>
-    <option class="select-option">Pilsner</option>
-    <option class="select-option">Porter</option>
-    <option class="select-option">Saison</option>
-    <option class="select-option">Sour</option>
-    <option class="select-option">Stout</option>
-    <option class="select-option">Wheat</option>
-    <option class="select-option">Light</option>
-    <option class="select-option">Strong</option>
+  <select class="select" ng-model="beers" ng-options="beers.name for beers in beers">
+    
+    <option value="" class="select-option"> -Select One-</option>
  </select>
+ </div>
+ 
+
+
  <!-- Location -->
  <h3 class ="head head-small">Please choose which city you are closest to.</h3>
-  <select class="select">
-    <option class="select-option">-Select One-</option>
-    <option class="select-option">Boulder</option>
-    <option class="select-option">Broomfield</option>
-    <option class="select-option">Louisville</option>
-    <option class="select-option">Lafayette</option>
-    <option class="select-option">Longmont</option>
-    <option class="select-option">Niwot</option>
-
-
+  <select class="select" ng-model="cities" ng-options="cities.name for cities in cities">
+    <option value="" class="select-option"> -Select One-</option>
   </select>
+
+
+  <input type="submit" class="button yellow-main-button">
 
 <!-- http://www.tapfourteen.com/beer-list Look here for brewery names and beers. -->
 
 
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="beer-types.js"></script>
   <script src="main.js"></script>
 
 </body>

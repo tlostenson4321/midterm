@@ -1,43 +1,4 @@
-html {
-	font-size: 14px;
-	/*background-color: #f6f6f6;*/
-	background-image: url(snow-beer.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-color: rgba(52, 52, 119, 1);
-	/*background-position: center; this is for larger*/
-}
-body {
-	width: 100vw;
-	background-color: transparent;
-	color: white;
-}
-.nav {
-	text-align: center;
-	width: 80vw;
-}
-.nav-item {
-	/*display: inline-block;*/
-	background-color: rgba(234, 220, 12, 0.5);
-	border: 1px solid rgba(234, 220, 12, 0);
-	margin: 10px 0px 10px 30px;
-	padding: 10px;
-	list-style-type: none;
-}
-.head {
-	background-color: rgba(52, 52, 119, 0.5);
-	color: white;
-	text-align: center;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	padding: 10px;
-}
-.head-big {
-	font-size: 2.5rem;
 
-}
-.head-small {
-	font-size: 1.5rem;
-}
 .select {
 	color:white;
 	background-color: rgba(164, 0, 0,0.7);
@@ -65,17 +26,7 @@ body {
 	background-color: rgba(0,0,0, 0.6);
 
 }
-.button {
-	font-family: sans-serif;
-	font-weight: bold;
-	border-radius: 5px;
-}
-.yellow-button {
-	border:1px solid #1515bf;
-	background-color: rgb(234, 220, 12);
-	color: #1515bf;
 
-}
 .lightbox {
 	position:fixed;
 	z-index: 998;
@@ -101,29 +52,20 @@ body {
 }
 .lightbox-header {
 	font-size: 1em;
+	text-shadow:none;
 }
 .lightbox-select {
 	margin: 5px;
 }
-.content {
-	z-index: 10;
-	color: white;
+.yellow-main-button {
+	margin-top: 40px;
+	margin-left: 10px;
+	border:1px solid #1515bf;
+	background-color: rgba(234, 220, 12, 0.8);
+	color: #1515bf;
+	width: 80vw;
 }
-.content-list {
-	list-style-type: none;
-	text-align: center;
-	text-shadow:   
-	-1px -1px 0 #000000,
-    1px -1px 0 #000000,
-    -1px 1px 0 #000000,
-    1px 1px 0 #000000;
-    padding: 0;
-	
-}
-.content-item {
-    margin: 10px 0px;
 
-}
 
 
 

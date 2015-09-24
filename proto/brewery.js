@@ -1,9 +1,8 @@
 // $(document).on('ready', function() {
   
 // });
-angular.module('beeryApp', [])
 
-angular.module('beeryApp')
+angular.module('beerApp')
 .factory('breweryFactory', function(){
 	var breweryList = []
 
@@ -60,7 +59,7 @@ angular.module('beeryApp')
 
 
 
-angular.module('beeryApp')
+angular.module('beerApp')
 .controller('breweryController', ['$scope', 'breweryFactory', function($scope, breweryFactory){
 
 console.log('hello')	

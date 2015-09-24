@@ -1,4 +1,7 @@
 angular.module('beerApp', [])
+
+
+// Beer types
 angular.module('beerApp')
 	.factory('beerFactory', function(){
 		var beerList = []
@@ -33,7 +36,7 @@ console.log(beerList)
 
 })
 
-
+// pictures for card flip
 angular.module('beerApp')
 	.factory('picFactory', function(){
 	var picArray = []
@@ -50,19 +53,43 @@ angular.module('beerApp')
 			picArray : picArray
 		}	
 
-})
+	})
 
+angular.module('beerApp')
+	.factory('cityFactory', function(){
+	var cityArray = []
+		var City = function(name) {
+		this.name = name
+
+		cityArray.push(this)
+	}
+
+	var boulder = new City('Boulder')
+	var broomfield = new City('Broomfield')
+	var lafayette = new City('Lafayette')
+	var longmont = new City('Longmont')
+	var louisville = new City('Louisville')
+	var niwot = new City ('Niwot')
+
+		return {
+			City : City,
+			cityArray : cityArray
+		}
+
+	})
+console.log(cityArray)
 
 
 
 
 angular.module('beerApp')
-.controller('beerTypeController', ['$scope', 'beerFactory', 'picFactory', function($scope, beerFactory, picFactory){
+.controller('beerTypeController', ['$scope', 'beerFactory', function($scope, beerFactory){
 	
 console.log('hello')
 $scope.beers = beerFactory.beerList
 console.log(beerFactory.beerList)
-$scope.pictures = picFactory.picArray
+$scope.pictures = ['beer-test.jpg', 'beer-test2.jpg']
+ 
 
 
 
