@@ -89,8 +89,12 @@ console.log('hello')
 $scope.beers = beerFactory.beerList
 console.log(beerFactory.beerList)
 $scope.pictures = ['beer-test.jpg', 'beer-test2.jpg']
- 
+
+// Accordion test	
 
 
 
-}])	
+}])
+
+
+

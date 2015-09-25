@@ -1,21 +1,22 @@
 .beer-types{
 	border: 3px solid white;
-	height: 200px;
 }
 .beer-types-list {
 	list-style-type: none;
 	position: relative;
 }
 .beer-types-listitem {
-	display: inline-block;
+	width: 20vw;
 	margin: 20px;
 }
 .beer-types-listitem:hover {
-	background-color: black;
+	background-color: rgba(52, 52, 119, 0.8);
 }
 .beer-types-link {
 	color: white;
-
+}
+.beer-types-link:hover {
+	color:white;
 }
 .beer-types-listitem:hover .inner-list {
 	display: block;
@@ -23,16 +24,19 @@
 .inner-list {
 	display:none;
 	position: absolute;
-	background-color: black;
-	border: 1px solid white;
+	background-color: rgba(52, 52, 119, 0.9);
+	/*border: 1px solid white;*/
 	border-top: 0;
+	/*height: 100%;*/
+	margin-left: 17vw;
 }
 .inner-listitem {
 	display: block;
-	color: white;
+	width: 80vw;
+	text-align: center;
 }
-.inner-listitem:hover {
-	color:red;
+.inner-listitem a:hover {
+	color:rgba(234, 220, 12, 0.8);
 }
 
 

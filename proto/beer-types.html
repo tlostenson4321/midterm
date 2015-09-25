@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 	<title>Beers ya need</title>
-	 <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="total.css">
   <link rel="stylesheet" type="text/css" href="beer-types.css">
   <script src="angular.min.js"></script>
@@ -17,43 +17,59 @@
     		<li class= "nav-item button"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
   		</ul>
 	</nav>
-	<h3 class="head head-small"> What type of flavor are you craving?</h3>
+	
 
+	<h3 class="head head-small"> What type of flavor are you craving?</h3>
+	<!-- Add a click event, with ng-hide and show.and use filters to pull the beers per flavor -->
 	<div class="beer-types">
 		<ul class="beer-types-list">
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Balanced</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">Beer Name</li>
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Balanced'" class="inner-listitem">
+						<a class="beer-types-link">{{beer.name}}</a>
+					</li>
+				</ul>
+			</li>
+			<li class="beer-types-listitem"><a href="" class="beer-types-link">Crisp</a>
+				<ul class="inner-list">
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Crisp'" class="inner-listitem">
+						<a class="beer-types-link">{{beer.name}}</a>
+					</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Fruity</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">Beer name</li>
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Fruity'" class="inner-listitem">
+						<a class="beer-types-link">{{beer.name}}</a>
+					</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Heavy</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">beer name</li>
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Heavy'" class="inner-listitem">
+						<a class="beer-types-link">{{beer.name}}</a>
+					</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Hoppy</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">Beer Name</li>
-				</ul>
-			</li>
-			<li class="beer-types-listitem"><a href="" class="beer-types-link">Light/Crisp</a>
-				<ul class="inner-list">
-					<li class="inner-listitem">Beer Name</li>
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Hoppy'"class="inner-listitem">
+						<a class="beer-types-link">{{beer.name}}</a>
+					</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Malty/Rich</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">Beer Name</li>
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Malty/Rich'" class="inner-listitem">
+						<a class="beer-types-link">{{beer.name}}</a>
+					</li>
 				</ul>
 			</li>
 			<li class="beer-types-listitem"><a href="" class="beer-types-link">Sour</a>
 				<ul class="inner-list">
-					<li class="inner-listitem">Beer Name</li>
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Sour'" class="inner-listitem">
+					<a class="beer-types-link">{{beer.name}}</a>
+					</li>
 				</ul>
 			</li>
 		</ul>
@@ -87,6 +103,9 @@
 			</li>
 	</div> -->
 </div>
+   
+
+
    <script src ="beer-types.js"></script> 
 </body>
 </html>
@@ -98,3 +117,12 @@
 or drop down "nav" with beers listed underneath. 
 
 Page can jump down to each type of beer. --> 
+
+
+
+
+
+
+
+
+
