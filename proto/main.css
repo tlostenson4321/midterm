@@ -8,24 +8,15 @@
 	box-sizing: content-box;
 	margin-left: 10px;
 }
-/*Check this @ home.
-.select-option {
-	color:#1515bf;
-}*/
-.input {
-	width: 50vw;
-	border-radius: 5px;
-	background-color: rgba(0,0,0,0.2);
-	color: white;
-	margin:0vw 10vw;
-	outline-color: transparent;
-	outline-style: none;
-}
-.input:focus {
-	background-color: rgba(0,0,0, 0.6);
 
+.yellow-main-button {
+	margin-top: 40px;
+	margin-left: 10px;
+	border:1px solid #1515bf;
+	background-color: rgba(234, 220, 12, 0.8);
+	color: #1515bf;
+	font-weight: bold;
 }
-
 .lightbox {
 	position:fixed;
 	z-index: 998;
@@ -56,14 +47,6 @@
 .lightbox-select {
 	margin: 5px;
 }
-.yellow-main-button {
-	margin-top: 40px;
-	margin-left: 10px;
-	border:1px solid #1515bf;
-	background-color: rgba(234, 220, 12, 0.8);
-	color: #1515bf;
-	font-weight: bold;
-}
 
 
 
@@ -71,6 +54,23 @@
 
 
 
+/*Check this @ home.
+.select-option {
+	color:#1515bf;
+}*/
+/*.input {
+	width: 50vw;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+	margin:0vw 10vw;
+	outline-color: transparent;
+	outline-style: none;
+}*/
 
 
 
+/*.input:focus {
+	background-color: rgba(0,0,0, 0.6);
+
+}*/

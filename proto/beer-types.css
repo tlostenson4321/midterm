@@ -1,13 +1,12 @@
 
 .beer-types{
 	border: 3px solid white;
+	margin-left: 5px;
 }
 .beer-types-list {
-	list-style-type: none;
 	position: relative;
 }
 .beer-types-listitem {
-	width: 72px;
 	margin: 20px;
 	padding: 10px 0px;
 }

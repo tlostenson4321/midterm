@@ -32,7 +32,7 @@ angular.module('beerApp')
 
 
 
-console.log(beerList)
+
 
 })
 
@@ -85,9 +85,9 @@ angular.module('beerApp')
 angular.module('beerApp')
 .controller('beerTypeController', ['$scope', 'beerFactory', function($scope, beerFactory){
 	
-console.log('hello')
+
 $scope.beers = beerFactory.beerList
-console.log(beerFactory.beerList)
+
 $scope.pictures = ['beer-test.jpg', 'beer-test2.jpg']
 
 // Accordion test	

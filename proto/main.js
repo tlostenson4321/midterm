@@ -12,10 +12,9 @@
 
 angular.module('beerApp')
 .controller('beerFinderController', ['$scope', 'beerFactory', 'cityFactory', function($scope, beerFactory, cityFactory){
-
-console.log('hello')	
+	
 $scope.beers = beerFactory.beerList
-console.log(beerFactory.beerList)
+
 $scope.cities = cityFactory.cityArray
 }])
 

@@ -63,7 +63,7 @@ angular.module('beerApp')
 angular.module('beerApp')
 .controller('breweryController', ['$scope', 'breweryFactory', function($scope, breweryFactory){
 
-console.log('hello')	
+	
 	$scope.breweries = breweryFactory.breweryList
 }])
 

@@ -11,13 +11,21 @@
 <body ng-controller="breweryController">
 <header class="head head-big">Want to get a beer from the source?</header>
 	
-  <nav class= "nav">
-  		<ul>
-    		<li class= "nav-item button"> <a href="index.html">Home</a></li>
-        <li class= "nav-item button"> <a href="beer-types.html">Beer Types</a></li>
-        <li class= "nav-item button"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
-  		</ul>
-	</nav>
+ <div class="container-fluid">
+<nav class= "nav">
+  <ul class="list-unstyled">
+    <div class="row">
+    <li class= "nav-item button col-xs-10"> <a href="index.html">Home</a></li>
+    </div>
+    <div class="row">
+    <li class= "nav-item button col-xs-10"> <a href="beer-types.html">Beer Types</a></li>
+    </div>
+    <div class="row">
+    <li class= "nav-item button col-xs-10"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
+    </div>
+  </ul>
+</nav>
+</div>
   
 
   <div class="content">
@@ -40,6 +48,12 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Broomfield'">
         <h3>{{brewery.name}}</h3>
+        <p>{{brewery.address}}</p>
+        <p>{{brewery.website}}</p>
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
@@ -49,6 +63,12 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Lafayette'">
         <h3>{{brewery.name}}</h3>
+        <p>{{brewery.address}}</p>
+        <p>{{brewery.website}}</p>
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
@@ -58,6 +78,12 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Longmont'">
         <h3>{{brewery.name}}</h3>
+        <p>{{brewery.address}}</p>
+        <p>{{brewery.website}}</p>
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
@@ -67,6 +93,12 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Louisville'">
         <h3>{{brewery.name}}</h3>
+        <p>{{brewery.address}}</p>
+        <p>{{brewery.website}}</p>
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
@@ -76,6 +108,12 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Niwot'">
         <h3>{{brewery.name}}</h3>
+        <p>{{brewery.address}}</p>
+        <p>{{brewery.website}}</p>
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
