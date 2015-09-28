@@ -23,44 +23,64 @@
   <div class="content">
     <h4 class="head head-small"> Boulder</h4>
     <ul class="content-list">
-      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Boulder'">{{brewery.name}}</li>
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Boulder'">
+        <h3>{{brewery.name}}</h3>
+        <p>{{brewery.address}}</p>
+        <p>{{brewery.website}}</p>
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
+      </li>
     </ul>
   </div> 
   
   <div class="content">
     <h4 class="head head-small">Broomfield</h4>
      <ul class="content-list">
-      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Broomfield'">{{brewery.name}}</li>
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Broomfield'">
+        <h3>{{brewery.name}}</h3>
+      </li>
     </ul>
   </div>
   
   <div class="content">
     <h4 class="head head-small">Lafayette</h4>
      <ul class="content-list">
-      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Lafayette'">{{brewery.name}}</li>
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Lafayette'">
+        <h3>{{brewery.name}}</h3>
+      </li>
     </ul>
   </div>
   
   <div class="content">
     <h4 class="head head-small">Longmont</h4>
      <ul class="content-list">
-      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Longmont'">{{brewery.name}}</li>
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Longmont'">
+        <h3>{{brewery.name}}</h3>
+      </li>
     </ul>
   </div>
   
   <div class="content">
     <h4 class="head head-small">Louisville</h4>
      <ul class="content-list">
-      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Louisville'">{{brewery.name}}</li>
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Louisville'">
+        <h3>{{brewery.name}}</h3>
+      </li>
     </ul>
   </div>
   
   <div class="content">
     <h4 class="head head-small">Niwot</h4>
      <ul class="content-list">
-      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Niwot'">{{brewery.name}}</li>
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Niwot'">
+        <h3>{{brewery.name}}</h3>
+      </li>
     </ul>
   </div>
+
+
       
 
 
@@ -74,3 +94,8 @@
 </body>
 </html>
 
+  <!-- <accordion-group heading="{{breweries.name}}" ng-repeat="brewery in breweries">
+      <p>{{brewery.address}}</p>
+      <p>{{brewery.website}}</p>
+      <p>{{brewery.specialties}}</p>
+    </accordion-group> -->

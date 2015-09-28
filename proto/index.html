@@ -162,57 +162,72 @@
     <input class="button yellow-button" type="submit">
   </div>
 </div> -->
-<header class="head head-big">Need beer? <br>We got ya covered!</header>
+<header class="head head-big">Need beer near Boulder? <br>We got ya covered!</header>
+<div class="container">
 <nav class= "nav">
-  <ul>
-    <li class= "nav-item button"> <a href="index.html">Home</a></li>
-    <li class= "nav-item button"> <a href="beer-types.html">Beer Types</a></li>
-    <li class= "nav-item button"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
+  <ul class="row">
+    <li class= "nav-item button col-xs-9"> <a href="index.html">Home</a></li>
+    <li class= "nav-item button col-xs-9"> <a href="beer-types.html">Beer Types</a></li>
+    <li class= "nav-item button col-xs-9"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
   </ul>
 </nav>
-
+</div>
 
 
 
 
 <!-- Beer location -->
-<h1 class="head head-small"> Would you prefer a brewery or tap room?</h1>
-<!-- <img href= Go to pexels for free photos. -->
-  <select class="select">
+<div class="container-fluid">
+<div class="row">
+<h1 class="head head-small col-xs-12"> Would you prefer a brewery or tap room?</h1>
+</div>
+<div class="row">
+  <select class="select col-xs-10">
     <option class="select-option"> -Select One-</option>
     <option class="select-option">Brewery</option>
     <option class="select-option">Tap Room</option>
     
-  </select>
+</select>
+</div>
+
 
 
 
 
 <!-- Beer types  -->
-<div>
-<h3 class="head head-small">What type of beer are you in the mood for?</h3>
-  <select class="select" ng-model="beers" ng-options="beers.name for beers in beers">
+<div class="row">
+<h3 class="head head-small col-xs-12">What type of beer are you in the mood for?</h3>
+</div>
+<div class="row">
+  <select class="select col-xs-10" ng-model="beers" ng-options="beers.name for beers in beers">
     
     <option value="" class="select-option"> -Select One-</option>
  </select>
  </div>
+
  
 
 
  <!-- Location -->
- <h3 class ="head head-small">Please choose which city you are closest to.</h3>
-  <select class="select" ng-model="cities" ng-options="cities.name for cities in cities">
+ <div class="row">
+ <h3 class ="head head-small col-xs-12">Please choose which city you are closest to.</h3>
+ </div>
+ <div class="row">
+  <select class="select col-xs-10" ng-model="cities" ng-options="cities.name for cities in cities">
     <option value="" class="select-option"> -Select One-</option>
   </select>
+  </div>
 
-
-  <input type="submit" class="btn yellow-main-button">
+  <div class="row">
+  <input type="submit" class="btn yellow-main-button col-xs-10">
+  </div>
+</div>
 
 <!-- http://www.tapfourteen.com/beer-list Look here for brewery names and beers. -->
 
 
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
   <script src="beer-types.js"></script>
   <script src="main.js"></script>
 
@@ -224,3 +239,4 @@
  <!--  <input class="input" type="text"> 
   <input class="button yellow-button" type="submit"> -->
 <!-- possibly add liquor stores and restaurants back in later. -->
+<!-- <img href= Go to pexels for free photos. -->
