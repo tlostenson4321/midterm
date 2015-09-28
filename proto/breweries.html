@@ -33,12 +33,14 @@
     <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Boulder'">
         <h3>{{brewery.name}}</h3>
-        <p>{{brewery.address}}</p>
-        <p>{{brewery.website}}</p>
+        <p>Their address is {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
         <ul class="content-list">
-          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          <li ng-repeat="specialty in brewery.specialties"> {{specialty}}
           </li>
         </ul>
+        </p>
       </li>
     </ul>
   </div> 

@@ -1,7 +1,6 @@
 
 .beer-types{
 	border: 3px solid white;
-	margin-left: 5px;
 }
 .beer-types-list {
 	position: relative;
@@ -9,9 +8,10 @@
 .beer-types-listitem {
 	margin: 20px;
 	padding: 10px 0px;
+	width: 100px;
 }
 .beer-types-listitem:hover {
-	background-color: rgba(52, 52, 119, 0.8);
+	background-color: rgba(52, 52, 119, 1);
 }
 .beer-types-link {
 	color: white;
@@ -26,7 +26,7 @@
 .inner-list {
 	display:none;
 	position: absolute;
-	background-color: rgba(52, 52, 119, 0.9);
+	background-color: rgba(52, 52, 119, 1);
 	/*border: 1px solid white;*/
 	border-top: 0;
 	height: 100%;
@@ -34,7 +34,6 @@
 	top:0px;
 	padding: 20px;
 	padding-top: 60px;
-	width: 60%;
 }
 .inner-listitem {
 	display: block;
@@ -44,7 +43,15 @@
 .inner-listitem a:hover {
 	color:rgba(234, 220, 12, 0.8);
 }
-
+.beer-flip {
+	border-bottom:2px dashed white;
+	text-align: center;
+	padding:0;
+	clear:both;
+}
+.front {
+	padding:0;
+}
 
 
 
@@ -52,7 +59,7 @@
 
 
 /*Gonna have to use ng-click and JS. BLARG!!!!*/
-.front {
+/*.front {
 	position: absolute;
 	z-index: 1;
 	transition: transform 1s;
@@ -70,10 +77,12 @@
 	transform-style: preserve-3d;
 	transition: transform 1s;
 	z-index: 0;
+
 }
 .beer-flip:active .back{
 	transform: rotateY( 0deg) ;
 	transform-style: preserve-3d;
 	transition: transform 1s;
-}
+}*/
+
 
