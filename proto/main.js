@@ -20,3 +20,15 @@ $scope.cities = cityFactory.cityArray
 
 // Need a for loop for each beer flavor. Will pull beers for beerArray that have that flavor listed.
 
+// $scope.age = function()
+// if ()
+
+
+
+
+
+
+// if statement.
+
+// 	if the age entered is over 21. which equals November 1st, 1994.
+// 		Then the lightbox should dissapear. 

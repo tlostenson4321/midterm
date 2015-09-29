@@ -44,13 +44,18 @@
 	font-size: 1em;
 	text-shadow:none;
 }
-.lightbox-select {
-	margin: 5px;
+
+.lightbox-btn {
+	margin: 20px 10px;
 }
 
 
 
 
+
+/*.lightbox-select {
+	margin: 5px;
+}*/
 
 
 

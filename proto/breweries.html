@@ -15,13 +15,13 @@
 <nav class= "nav">
   <ul class="list-unstyled">
     <div class="row">
-    <li class= "nav-item button col-xs-10"> <a href="index.html">Home</a></li>
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="index.html">Home</a></li>
     </div>
     <div class="row">
-    <li class= "nav-item button col-xs-10"> <a href="beer-types.html">Beer Types</a></li>
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="beer-types.html">Beer Types</a></li>
     </div>
     <div class="row">
-    <li class= "nav-item button col-xs-10"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
     </div>
   </ul>
 </nav>
@@ -33,8 +33,8 @@
     <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Boulder'">
         <h3>{{brewery.name}}</h3>
-        <p>Their address is {{brewery.address}}</p>
-        <p>This is their webiste {{brewery.website}}</p>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste <a class="link" href="{{brewery.website}}">{{brewery.website}}</a></p>
         <p> They specialize in
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties"> {{specialty}}
@@ -50,8 +50,9 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Broomfield'">
         <h3>{{brewery.name}}</h3>
-        <p>{{brewery.address}}</p>
-        <p>{{brewery.website}}</p>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>
@@ -65,8 +66,9 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Lafayette'">
         <h3>{{brewery.name}}</h3>
-        <p>{{brewery.address}}</p>
-        <p>{{brewery.website}}</p>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>
@@ -80,8 +82,9 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Longmont'">
         <h3>{{brewery.name}}</h3>
-        <p>{{brewery.address}}</p>
-        <p>{{brewery.website}}</p>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>
@@ -95,8 +98,9 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Louisville'">
         <h3>{{brewery.name}}</h3>
-        <p>{{brewery.address}}</p>
-        <p>{{brewery.website}}</p>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>
@@ -110,8 +114,9 @@
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Niwot'">
         <h3>{{brewery.name}}</h3>
-        <p>{{brewery.address}}</p>
-        <p>{{brewery.website}}</p>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>

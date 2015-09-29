@@ -10,91 +10,96 @@
 </head>
 <body ng-controller="beerTypeController">
 <header class="head head-big"> Know where to find your beer and just need beer ideas?</header>
-<div class="container-fluid">
+<div class="container-fluid no-padding">
 <nav class= "nav">
   <ul class="list-unstyled">
-    <div class="row">
-    <li class= "nav-item button col-xs-10"> <a href="index.html">Home</a></li>
+    <div class="row no-margin">
+    <li class= "nav-item button col-xs-10  col-sm-11"> <a href="index.html">Home</a></li>
     </div>
-    <div class="row">
-    <li class= "nav-item button col-xs-10"> <a href="beer-types.html">Beer Types</a></li>
+    <div class="row no-margin">
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="beer-types.html">Beer Types</a></li>
     </div>
-    <div class="row">
-    <li class= "nav-item button col-xs-10"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
+    <div class="row no-margin">
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="breweries.html"> Breweries/Tap Rooms</a></li>
     </div>
   </ul>
 </nav>
 </div>
 	
-<div class="container-fluid">
-	<div class="row">
-	<h3 class="head head-small col-xs-11"> What type of flavor are you craving?</h3>
+<div class="container-fluid no-padding no-margin">
+	<div class="row no-margin">
+	<h3 class="head head-small col-xs-12"> What type of flavor are you craving?</h3>
 	</div>
 	<!-- Add a click event, with ng-hide and show.and use filters to pull the beers per flavor -->
-	<div class="beer-types row">
-	<div class="col-xs-11">
-		<ul class="beer-types-list col-xs-11 list-unstyled">
-			<li class="beer-types-listitem"><a href="" class="beer-types-link">Balanced</a>
-				<ul class="inner-list col-xs-9">
+	<div class="row no-margin">
+	<div class="beer-types col-xs-12">
+
+		<ul class="beer-types-list col-xs-10 list-unstyled no-padding">
+			<li class="beer-types-listitem"><a href="" class="link">Balanced</a>
+				<ul class="inner-list col-xs-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Balanced'" class="inner-listitem">
-						<a class="beer-types-link">{{beer.name}}</a>
+						<a class="link">{{beer.name}}</a>
 					</li>
 				</ul>
 			</li>
-			<li class="beer-types-listitem"><a href="" class="beer-types-link">Crisp</a>
-				<ul class="inner-list col-xs-9">
+			<li class="beer-types-listitem"><a href="" class="link">Crisp</a>
+				<ul class="inner-list col-xs-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Crisp'" class="inner-listitem">
-						<a class="beer-types-link">{{beer.name}}</a>
+						<a class="link">{{beer.name}}</a>
 					</li>
 				</ul>
 			</li>
-			<li class="beer-types-listitem"><a href="" class="beer-types-link">Fruity</a>
-				<ul class="inner-list col-xs-9">
+	
+			<li class="beer-types-listitem"><a href="" class="link">Fruity</a>
+				<ul class="inner-list col-xs-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Fruity'" class="inner-listitem">
-						<a class="beer-types-link">{{beer.name}}</a>
+						<a class="link">{{beer.name}}</a>
 					</li>
 				</ul>
 			</li>
-			<li class="beer-types-listitem"><a href="" class="beer-types-link">Heavy</a>
-				<ul class="inner-list col-xs-9">
+	
+			<li class="beer-types-listitem"><a href="" class="link">Heavy</a>
+				<ul class="inner-list col-xs-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Heavy'" class="inner-listitem">
-						<a class="beer-types-link">{{beer.name}}</a>
+						<a class="link">{{beer.name}}</a>
 					</li>
 				</ul>
 			</li>
-			<li class="beer-types-listitem"><a href="" class="beer-types-link">Hoppy</a>
-				<ul class="inner-list col-xs-9">
+	
+			<li class="beer-types-listitem"><a href="" class="link">Hoppy</a>
+				<ul class="inner-list col-xs-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Hoppy'"class="inner-listitem">
-						<a class="beer-types-link">{{beer.name}}</a>
+						<a class="link">{{beer.name}}</a>
 					</li>
 				</ul>
 			</li>
-			<li class="beer-types-listitem"><a href="" class="beer-types-link">Malty/Rich</a>
-				<ul class="inner-list col-xs-9">
+			<li class="beer-types-listitem"><a href="" class="link">Malty/Rich</a>
+				<ul class="inner-list col-xs-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Malty/Rich'" class="inner-listitem">
-						<a class="beer-types-link">{{beer.name}}</a>
+						<a class="link">{{beer.name}}</a>
 					</li>
 				</ul>
 			</li>
-			<li class="beer-types-listitem"><a href="" class="beer-types-link">Sour</a>
-				<ul class="inner-list col-xs-9">
+	
+			<li class="beer-types-listitem"><a href="" class="link">Sour</a>
+				<ul class="inner-list col-xs-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Sour'" class="inner-listitem">
-					<a class="beer-types-link">{{beer.name}}</a>
+					<a class="link">{{beer.name}}</a>
 					</li>
 				</ul>
 			</li>
 		</ul>
-		</div>
+	</div>
 	</div>
 </div>
 <div>
-	<div class="front container-fluid">
-		<div class="row">
-		<ul class="list-unstyled col-xs-12">
+	<div class="front container-fluid no-padding no-margin">
+		<div class="row no-margin">
+		<ul class="list-unstyled col-xs-12 no-padding">
 			<!-- added the class for when ng-click is added it will work separately. -->
 			<li ng-repeat="beer in beers"  class ="beer-flip">
 			
-				<h3 class="head head-small">A {{beer.name}} beer</h3>
+				<h3 class="head head-small col-xs-12">A {{beer.name}} beer</h3>
 					<h4>Can include in it's flavor profile:</h4>
 					<p>
 					<ul class="list-unstyled">
@@ -102,15 +107,15 @@
 					</ul>
 					</p>
 				<h4>It has a {{beer.strength}} flavor.</h4>
-
+			</li>
+		</ul>
 				<!-- <ul>
 					Can't make this work!!!!!!
 					<li ng-repeat="picture in pictures">
 						<img ng-src='{{picture}}'>
 					</li>
 				</ul> -->
-			</li>
-		</ul>
+		</div>
 		
 	</div>
 	<!-- <div class="back">

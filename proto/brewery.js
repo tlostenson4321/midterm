@@ -3,25 +3,31 @@
 // });
 
 angular.module('beerApp')
-.factory('breweryFactory', function(){
+.factory('breweryFactory', ['beerFactory', function(beerFactory){
 	var breweryList = []
 
-	var Brewery = function(name, location, address, website, specialties){
+	var Brewery = function(name, location, address, website, specialties, beers){
 			// name = string
 			// location = string
 			// website = string
 			// specialties = array
+			// beer = array of beers
 		this.name = name
 		this.location = location
 		this.address = address
 		this.website = website
 		this.specialties = specialties
+		this.beers = beers
+
+		
 
 		breweryList.push(this)
 }
+	
 
 
-	var avery = new Brewery('Avery Brewing Company', 'Boulder', '4910 Nautilus Ct.', 'http://averybreweing.com', ['strongly flavored Ales', 'lots of hops, malt, AND FLAVOR', 'high ABV'])
+
+	var avery = new Brewery('Avery Brewing Company', 'Boulder', '4910 Nautilus Ct.', 'http://averybrewing.com', ['strongly flavored Ales', 'lots of hops, malt, AND FLAVOR', 'high ABV'])
 	var leftHand = new Brewery('Left Hand Brewery', 'Longmont', '1265 Boston Ave.', 'http://lefthandbrewing.com', ['Awesome labels'])
 	var boulderBeer = new Brewery('Boulder Beer', 'Boulder', '2880 Wilderness Pl.', 'http://boulderbeer.com', ["Colorado's first craft brewery", 'Barrel Aged Beers', 'Big Flavors'])
 	var fate = new Brewery('FATE Brewing Company', 'Boulder', '1600 38th St.', 'http://fatebrewingcompany.com', ['Creating something different'])
@@ -51,7 +57,7 @@ angular.module('beerApp')
 		breweryList : breweryList
 	}
 
-})
+}])
 // need to add an ng-hide on an ng-click for lightbox.
 // 	if age is over 21 will hide. 
 // need to create an ng-show for all selects after each is entered.
@@ -70,5 +76,28 @@ angular.module('beerApp')
 // var BeerFinder = function(name, flavor)
 
 // Need a for loop for each beer flavor. Will pull beers for beerArray that have that flavor listed.
-
+// Avery beers: ipa, wheat, brown, stout, pilsner, porter, karma, ale, amber
+// Left Hand: ipa, stout, pale ale, ale, pilsner, porter
+// Boulder beer 
+// fate beers: ipa, stout, ale, wheat, pilsner
+// twisted pine: ipa, pale ale, sour, wheat, stout
+// southern sun: wheta, stout, ale, pale ale, porter, amber, ipa
+// upslope: pale ale, ipa, brown, sour, stout
+// asher : ipa, amber, wheat
+// sanitas: ipa, sour, ipa, brown, amber, stout, ale, fruit, 
+// wild woods: ipa, pale ale, amber, porter, stout, wheat, fruit
+// west flanders: ipa, pale ale, pilsner, porter, sour, 
+// finkel and garf: ale, stout, ipa, amber, wheat, fruit, sour
+// vindication: ipa, amber, fruit, wheat, stout
+// bootstrap: amber, pale ale, wheat, ipa, brown, stout, 
+// powder keg: stout, pale ale, saison, amber
+// front range: wheat, pilsner, amber, ipa, stout
+// the post: pilsner, pale ale, ipa
+// 12 degree: saison, wheat, ipa, amber
+// four noses: blonde, ipa, porter, pale ale
+// odd 13: ipa, sour, amber, stout, 
+// gravity: pilsner, fruit, saison, stout, wheat, ipa, amber, 
+// wonderland: blonde, ipa, saison, fruit, porter, amber, stout, pale ale
+// crystal springs: ipa, wheat, pale ale, fruity, porter, amber, stout
+// oskar blues: ipa, pilsner, amber, stout, 
 
