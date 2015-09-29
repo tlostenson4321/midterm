@@ -61,3 +61,6 @@ body {
 .link:hover{
 	color: rgb(228, 36, 36);
 }
+.link-big {
+	font-size: 1.3rem;
+}

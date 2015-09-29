@@ -13,12 +13,7 @@
 .beer-types-listitem:hover {
 	background-color: rgba(52, 52, 119, 1);
 }
-/*.beer-types-link {
-	color: white;
-}
-.beer-types-link:hover {
-	color:white;
-}*/
+
 /*gonna have to be a click event*/
 .beer-types-listitem:hover .inner-list {
 	display: block;
@@ -30,7 +25,7 @@
 	/*border: 1px solid white;*/
 	border-top: 0;
 	height: 100%;
-	margin-left: 72px;
+	margin-left: 100px;
 	top:0px;
 	padding: 20px;
 	padding-top: 60px;

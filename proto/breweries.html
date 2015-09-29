@@ -34,7 +34,7 @@
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Boulder'">
         <h3>{{brewery.name}}</h3>
         <p>They are located at: {{brewery.address}}</p>
-        <p>This is their webiste <a class="link" href="{{brewery.website}}">{{brewery.website}}</a></p>
+        <p>This is their webiste <a class="link"href="{{brewery.website}}">{{brewery.website}}</a></p>
         <p> They specialize in
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties"> {{specialty}}
