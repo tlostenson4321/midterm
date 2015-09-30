@@ -44,26 +44,26 @@
 	clear:both;
 }
 
-.border-bottom {
+/*.border-bottom {
 	border-bottom:2px dashed white;
 	
+}*/
+
+
+.front-list{
+	height: 300px;
+
 }
 
 
 
-
-
 /*Gonna have to use ng-click and JS. BLARG!!!!*/
-.front {
+/*.front {
 	position: absolute;
 	z-index: 1;
 	transition: transform 1s;
 	backface-visibility: hidden;
 	right:40%;
-}
-.front-list{
-	height: 300px;
-
 }
 
 .back {
@@ -83,7 +83,7 @@
 	transform: rotateY( 0deg) ;
 	transform-style: preserve-3d;
 	transition: transform 1s;
-}
+}*/
 /*.text-align {
 	text-align: center;
 }

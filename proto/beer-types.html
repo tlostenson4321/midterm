@@ -27,7 +27,8 @@
 </div>
 	
 <!-- http://jsfiddle.net/razh/NFNvc/ -->
-
+<!-- <a target="framename"> -->
+<!-- https://docs.angularjs.org/api/ng/service/$anchorScroll -->
 
 <div class="container-fluid no-padding no-margin">
 	<div class="row no-margin">
@@ -125,6 +126,7 @@
 					</ul>
 					</p>
 				<h4>It has a {{beer.strength}} flavor.</h4>
+			<a href="#">Back to top</a>
 			</li>
 		</ul>
 				
@@ -135,67 +137,78 @@
 
 
 	<div>
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled">
+			<h3 class="head head-small">Amber</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Amber'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 	
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled">
+			<h3 class="head head-small">Brown</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Brown'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 	
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled">
+			<h3 class="head head-small">Fruit</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Fruit'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 	
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled">
+			<h3 class="head head-small">India Pale Ale</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'India Pale Ale'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 	
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled">
+			<h3 class="head head-small">Pale Ale</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Pale Ale'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 	
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled">
+			<h3 class="head head-small">Pilsner</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Pilsner'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 	
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled">
+			<h3 class="head head-small">Porter</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Porter'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 	
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled">
+			<h3 class="head head-small">Saison</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Saison'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled">
+			<h3 class="head head-small">Sour</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Sour'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 	
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled ">
+			<h3 class="head head-small">Stout</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Stout'">
 			<p>{{brewery.name}}</p>
 			</li>
 		</ul>
 	
-		<ul class="back list-unstyled border-bottom">
+		<ul class="back list-unstyled ">
+			<h3 class="head head-small">Wheat</h3>
 			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Wheat'">
 			<p>{{brewery.name}}</p>
 			</li>
