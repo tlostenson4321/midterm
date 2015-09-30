@@ -140,7 +140,9 @@ angular.module('beerApp')
 .controller('beerTypeController', ['$scope', 'beerFactory', function($scope, beerFactory){
 	
 
-$scope.beers = beerFactory.beerList
+	$scope.beers = beerFactory.beerList
+
+	
 
 // $scope.pictures = ['beer-test.jpg', 'beer-test2.jpg']
 
@@ -149,6 +151,17 @@ $scope.beers = beerFactory.beerList
 
 
 }])
+
+
+
+// function MyCtrl($scope) {
+
+//   $scope.myvalue = false;
+
+//   $scope.showAlert = function(){
+//     $scope.myvalue = true;  
+//   };
+// }
 
 
 

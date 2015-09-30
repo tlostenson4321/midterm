@@ -16,6 +16,12 @@ angular.module('beerApp')
 $scope.beers = beerFactory.beerList
 
 $scope.cities = cityFactory.cityArray
+	
+$scope.lightbox = true
+
+$scope.hideLightbox = function(){
+	$scope.ligthbox=false
+}
 }])
 
 // Need a for loop for each beer flavor. Will pull beers for beerArray that have that flavor listed.

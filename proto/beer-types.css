@@ -39,7 +39,7 @@
 	color:rgba(234, 220, 12, 0.8);
 }
 .beer-flip {
-	border-bottom:2px dashed white;
+	/*border-bottom:2px dashed white;*/
 	text-align: center;
 	padding:0;
 	clear:both;
