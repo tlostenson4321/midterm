@@ -26,6 +26,9 @@
 </nav>
 </div>
 	
+
+
+
 <div class="container-fluid no-padding no-margin">
 	<div class="row no-margin">
 	<h3 class="head head-small col-xs-12"> What type of flavor are you craving?</h3>
@@ -92,12 +95,27 @@
 	</div>
 	</div>
 </div>
-<div>
+
+
+
+
+<!-- <div ng-init="visible = true" ng-show="visible" class="lightbox">
+  <div class="lightbox-inner">
+    <h4 class= "lightbox-header"> Before you enter we need to make sure you are over 21.</h4>
+    <h4 class="lightbox-header">Are you?</h4>
+    <input type="submit" value="No" class=" btn btn-lg btn-success lightbox-btn">
+    <input ng-click="visible=false" type="submit" value="Yes" class="btn btn-lg btn-danger lightbox-btn">
+  </div -->
+
+
+
+
+<div class="beer-flip">
 	<div class="front container-fluid no-padding no-margin">
 		<div class="row no-margin">
-		<ul class="list-unstyled col-xs-12 no-padding">
+		<ul class="list-unstyled col-xs-12 no-padding text-align">
 			<!-- added the class for when ng-click is added it will work separately. -->
-			<li ng-repeat="beer in beers"  class ="beer-flip">
+			<li class="front-list" ng-repeat="beer in beers">
 			
 				<h3 class="head head-small col-xs-12">A {{beer.name}} beer</h3>
 					<h4>Can include in it's flavor profile:</h4>
@@ -109,21 +127,81 @@
 				<h4>It has a {{beer.strength}} flavor.</h4>
 			</li>
 		</ul>
-				<!-- <ul>
-					Can't make this work!!!!!!
-					<li ng-repeat="picture in pictures">
-						<img ng-src='{{picture}}'>
-					</li>
-				</ul> -->
+				
 		</div>
 		
 	</div>
-	<div class="back">
-		<ul>
-			<li>
-				
 
+
+
+	<div>
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Amber'">
+			<p>{{brewery.name}}</p>
 			</li>
+		</ul>
+	
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Brown'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+	
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Fruit'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+	
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'India Pale Ale'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+	
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Pale Ale'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+	
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Pilsner'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+	
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Porter'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+	
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Saison'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Sour'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+	
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Stout'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+	
+		<ul class="back list-unstyled border-bottom">
+			<li ng-repeat= "brewery in breweries | filter : brewery.beers = 'Wheat'">
+			<p>{{brewery.name}}</p>
+			</li>
+		</ul>
+		
+			
 	</div>
 </div>
    

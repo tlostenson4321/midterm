@@ -6,6 +6,7 @@ angular.module('beerApp')
 	.factory('beerFactory', function(){
 		var beerList = []
 		var breweryList = []
+		
 			var Beer = function(name, flavors, strength) {
 			this.name = name
 			this.flavors = flavors
@@ -81,7 +82,7 @@ angular.module('beerApp')
 			Beer : Beer,
 			beerList : beerList,
 			Brewery : Brewery,
-			breweryList : breweryList
+			breweryList : breweryList,
 		}
 
 
@@ -89,6 +90,8 @@ angular.module('beerApp')
 
 
 })
+	
+
 
 // pictures for card flip
 // angular.module('beerApp')
@@ -141,7 +144,7 @@ angular.module('beerApp')
 	
 
 	$scope.beers = beerFactory.beerList
-
+	$scope.breweries = beerFactory.breweryList
 	
 
 // $scope.pictures = ['beer-test.jpg', 'beer-test2.jpg']
