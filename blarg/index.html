@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="beerApp">
+<head>
+  <meta charset="utf-8">
+  <title>In need of beer</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+   
+  <link rel="stylesheet" type="text/css" href="main.css">
+   <script src="angular.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.js"></script>
+  
+</head>
+<body ng-controller="beerFinderController">
+<!-- This is my lightbox stuff --><!-- command + option +{ -->
+<div ng-init="visible = true" ng-show="visible" class="lightbox">
+  <div class="lightbox-inner">
+    <h4 class= "lightbox-header"> Before you enter we need to make sure you are over 21.</h4>
+    <h4 class="lightbox-header">Are you?</h4>
+    <input type="submit" value="No" class=" btn btn-lg btn-success lightbox-btn">
+    <input ng-click="visible=false" type="submit" value="Yes" class="btn btn-lg btn-danger lightbox-btn">
+  </div>
+</div>
+
+<!-- NAV BAR -->
+<header class="head head-big">Need beer near Boulder? <br>We got ya covered!</header>
+
+
+
+<!-- Beer types  -->
+<form>
+<div class="container-fluid">
+<div class="row">
+<h3 class="head head-small col-xs-12">What type of beer are you in the mood for?</h3>
+</div>
+<div class="row">
+  <select ng-change="test()" class="select col-xs-10 col-sm-11" ng-model="selectedBeer" ng-options="beers.name for beers in beers">
+    
+    <option value="" class="select-option"> -Select One-</option>
+ </select>
+ </div>
+
+<!-- filter beer in beers | filter : {name: selectedBeer.name}  -->
+
+
+ <!-- Location -->
+ <div class="row">
+ <h3 class ="head head-small col-xs-12">Please choose which city you are closest to.</h3>
+ </div>
+ <div class="row">
+  <select ng-change="otherTest()" class="select col-xs-10 col-sm-11" ng-model="selectedCity" ng-options="cities.name for cities in cities">
+    <option value="" class="select-option"> -Select One-</option>
+  </select>
+  </div>
+
+  <div class="row">
+  <input ng-click="criteriaMatch()" type="submit" class="btn yellow-main-button col-xs-10  col-sm-11">
+  </div>
+</div>
+</form>
+
+
+
+<div class="beer-flip">
+  <div class="container-fluid no-padding no-margin">
+    <div class="row no-margin">
+    <ul class="list-unstyled col-xs-12 no-padding">
+      <!-- added the class for when ng-click is added it will work separately. -->
+      <li ng-repeat="beer in beers | filter : {name: selectedBeer.name">
+        <accordion close-others="oneAtATime">
+            <accordion-group heading="{{brewery.name}}" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled" >
+              <ul class="list-unstyled">
+                <li ng-repeat="brewery in breweries | filter:criteriaMatch(beer.name)">
+                  <h3 class="brewery-head">{{brewery.name}}</h3>
+                  <p>They are located at: {{brewery.address}}</p>
+                  <p>This is their webiste <a class="link"href="{{brewery.website}}">{{brewery.website}}</a></p>
+                  <p> They specialize in
+                  <ul class="content-list">
+                    <li ng-repeat="specialty in brewery.specialties"> {{specialty}}
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+                  </p>
+                  </li>
+                </ul>
+            </accordion-group>
+        </accordion>
+      </li>
+    </ul>
+        
+    </div>
+    
+  </div>
+
+
+</div>
+
+
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>

@@ -48,6 +48,7 @@
 
 
 <!-- Beer types  -->
+<form>
 <div class="container-fluid">
 <div class="row">
 <h3 class="head head-small col-xs-12">What type of beer are you in the mood for?</h3>
@@ -59,7 +60,7 @@
  </select>
  </div>
 
- 
+filter beer in beers | filter : {name: selectedBeer.name} 
 
 
  <!-- Location -->
@@ -67,16 +68,16 @@
  <h3 class ="head head-small col-xs-12">Please choose which city you are closest to.</h3>
  </div>
  <div class="row">
-  <select class="select col-xs-10 col-sm-11" ng-model="selectedCities" ng-options="cities.name for cities in cities">
+  <select ng-change="otherTest()" class="select col-xs-10 col-sm-11" ng-model="selectedCity" ng-options="cities.name for cities in cities">
     <option value="" class="select-option"> -Select One-</option>
   </select>
   </div>
 
   <div class="row">
-  <input type="submit" class="btn yellow-main-button col-xs-10  col-sm-11">
+  <input ng-click="beerChosen()" type="submit" class="btn yellow-main-button col-xs-10  col-sm-11">
   </div>
 </div>
-
+</form>
 <!-- http://www.tapfourteen.com/beer-list Look here for brewery names and beers. -->
 
 
