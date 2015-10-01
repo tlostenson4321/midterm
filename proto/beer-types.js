@@ -49,7 +49,7 @@ angular.module('beerApp')
 
 		var avery = new Brewery('Avery Brewing Company', 'Boulder', '4910 Nautilus Ct.', 'http://averybrewing.com', ['strongly flavored Ales', 'lots of hops, malt, AND FLAVOR', 'high ABV'], [ ipa, wheat, brown, stout, pilsner, porter, amber])
 		var leftHand = new Brewery('Left Hand Brewery', 'Longmont', '1265 Boston Ave.', 'http://lefthandbrewing.com', ['Awesome labels'], [ipa, stout, paleAle, pilsner, porter])
-		var boulderBeer = new Brewery('Boulder Beer', 'Boulder', '2880 Wilderness Pl.', 'http://boulderbeer.com', ["Colorado's first craft brewery", 'Barrel Aged Beers', 'Big Flavors'], [])
+		var boulderBeer = new Brewery('Boulder Beer', 'Boulder', '2880 Wilderness Pl.', 'http://boulderbeer.com', ["Colorado's first craft brewery", 'Barrel Aged Beers', 'Big Flavors'], [ipa, porter, wheat, amber, paleAle, saison])
 		var fate = new Brewery('FATE Brewing Company', 'Boulder', '1600 38th St.', 'http://fatebrewingcompany.com', ['Creating something different'], [ipa, stout, wheat, pilsner])
 		var twistedPine = new Brewery('Twisted Pine Brewing', 'Boulder', '3201 Walnut St.', 'http://twistedpinebrewing.com', ['High quality products', 'experimentation'], [ipa, paleAle, saison, wheat, stout])
 		var southernSun = new Brewery('Southern Sun Pub and Brewery', 'Boulder', '1535 Pearl St.', 'http://mountainsunpub.com', ['Hoppy Beers', 'Ales'], [wheat, stout, paleAle, porter, amber, ipa])
@@ -140,7 +140,7 @@ angular.module('beerApp')
 
 
 angular.module('beerApp')
-.controller('beerTypeController', ['$scope', '$anchorScroll', 'beerFactory', function($scope, $anchorScroll, beerFactory){
+.controller('beerTypeController', ['$scope', '$anchorScroll', '$timeout', '$location', 'beerFactory', function($scope, $anchorScroll, $timeout, $location, beerFactory){
 	
 
 	$scope.beers = beerFactory.beerList
@@ -148,7 +148,7 @@ angular.module('beerApp')
 
 	$scope.criteriaMatch = function(beerType){
 		return function( brewery ){
-			console.log(brewery)
+			
 		var isMatch = false;
 		brewery.beersss.forEach(function(brewBeers){
 			if (brewBeers.name === beerType){

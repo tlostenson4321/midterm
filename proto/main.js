@@ -11,15 +11,33 @@
 
 
 angular.module('beerApp')
-.controller('beerFinderController', ['$scope', 'beerFactory', 'cityFactory', function($scope, beerFactory, cityFactory){
+.controller('beerFinderController', ['$scope', '$anchorScroll', '$timeout', '$location', 'beerFactory', 'cityFactory', function($scope, $anchorScroll, $timeout, $location, beerFactory, cityFactory){
 	
 $scope.beers = beerFactory.beerList
-
+$scope.breweries = beerFactory.breweryList
 $scope.cities = cityFactory.cityArray
+// $scope.selectedBeer = 
+
+$scope.test= function(){
+	console.log($scope.selectedBeer)
+}
+
 	
 }])
 
 // Need a for loop for each beer flavor. Will pull beers for beerArray that have that flavor listed.
+
+
+
+
+// if a certain combination is chosen then it will go to the breweries page but only show the specific items that were chosen.
+
+// filters needed are 
+// 	if (selectedBeer = Amber){
+// 		return breweries | filter brewery.beersss = 'Amber'
+// 	}
+
+// 	breweries.forEach( )
 
 
 

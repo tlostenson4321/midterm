@@ -9,6 +9,7 @@
    <script src="angular.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-animate.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 </head>
 <body ng-controller="beerFinderController">
 <!-- This is my lightbox stuff --><!-- command + option +{ -->
@@ -52,7 +53,7 @@
 <h3 class="head head-small col-xs-12">What type of beer are you in the mood for?</h3>
 </div>
 <div class="row">
-  <select class="select col-xs-10 col-sm-11" ng-model="beers" ng-options="beers.name for beers in beers">
+  <select ng-change="test()" class="select col-xs-10 col-sm-11" ng-model="selectedBeer" ng-options="beers.name for beers in beers">
     
     <option value="" class="select-option"> -Select One-</option>
  </select>
@@ -66,7 +67,7 @@
  <h3 class ="head head-small col-xs-12">Please choose which city you are closest to.</h3>
  </div>
  <div class="row">
-  <select class="select col-xs-10 col-sm-11" ng-model="cities" ng-options="cities.name for cities in cities">
+  <select class="select col-xs-10 col-sm-11" ng-model="selectedCities" ng-options="cities.name for cities in cities">
     <option value="" class="select-option"> -Select One-</option>
   </select>
   </div>

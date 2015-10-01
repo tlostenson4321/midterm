@@ -24,7 +24,7 @@ body {
 }
 .nav-item {
 	/*display: inline-block;*/
-	background-color: rgba(234, 220, 12, 0.5);
+	background-color: rgba(234, 220, 12, 0.7);
 	margin: 10px 15px;
 	padding: 10px;
 	text-shadow:none;
@@ -39,6 +39,9 @@ body {
 .head-big {
 	font-size: 2.5rem;
 
+}
+.head-med{
+	font-size: 2rem;
 }
 .head-small {
 	font-size: 1.5rem;
@@ -59,7 +62,7 @@ body {
 	color:white;
 }
 .link:hover{
-	color: rgb(228, 36, 36);
+	color:rgb(106, 82, 182);
 }
 .link-big {
 	font-size: 1.3rem;

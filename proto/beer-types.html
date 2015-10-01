@@ -43,7 +43,7 @@
 			<li class="beer-types-listitem"><a href="" class="link link-big">Balanced</a>
 				<ul class="inner-list col-xs-10 col-sm-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Balanced'" class="inner-listitem">
-						<a class="link" target="">{{beer.name}}</a>
+						<a href="#" class="link">{{beer.name}}</a>
 					</li>
 				</ul>
 			</li>
@@ -99,25 +99,16 @@
 </div>
 
 
-
-
-<!-- <div ng-init="visible = true" ng-show="visible" class="lightbox">
-  <div class="lightbox-inner">
-    <h4 class= "lightbox-header"> Before you enter we need to make sure you are over 21.</h4>
-    <h4 class="lightbox-header">Are you?</h4>
-    <input type="submit" value="No" class=" btn btn-lg btn-success lightbox-btn">
-    <input ng-click="visible=false" type="submit" value="Yes" class="btn btn-lg btn-danger lightbox-btn">
-  </div -->
  
 
 
 
 <div class="beer-flip">
-	<div class="front container-fluid no-padding no-margin">
+	<div class="container-fluid no-padding no-margin">
 		<div class="row no-margin">
-		<ul class="list-unstyled col-xs-12 no-padding text-align">
+		<ul class="list-unstyled col-xs-12 no-padding">
 			<!-- added the class for when ng-click is added it will work separately. -->
-			<li class="front-list" ng-repeat="beer in beers">
+			<li id="{{index}}" class="front-list" ng-repeat="beer in beers">
 			
 				<h3 class="head head-small col-xs-12">A {{beer.name}} beer</h3>
 					<h4>Can include in it's flavor profile:</h4>
@@ -127,8 +118,8 @@
 					</ul>
 					</p>
 				<h4>It has a {{beer.strength}} flavor.</h4>
- 				<accordion class="link" close-others="oneAtATime">
-    				<accordion-group heading="Breweries that carry this beer" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled" class="link" >
+ 				<accordion close-others="oneAtATime">
+    				<accordion-group heading="Breweries that carry this beer" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled" >
     					<ul class="list-unstyled">
     						<li ng-repeat="brewery in breweries | filter:criteriaMatch(beer.name)">
       					{{brewery.name}}
@@ -162,7 +153,7 @@ or drop down "nav" with beers listed underneath.
 Page can jump down to each type of beer. --> 
 
 
-
+<!-- <a href="#anchor01"> -->
 
 
 
