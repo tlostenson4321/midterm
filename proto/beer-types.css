@@ -44,16 +44,20 @@
 	clear:both;
 }
 
+accordion span{
+	color:white;
+}
+
 /*.border-bottom {
 	border-bottom:2px dashed white;
 	
 }*/
 
 
-.front-list{
+/*.front-list{
 	height: 300px;
 
-}
+}*/
 
 
 
@@ -86,11 +90,11 @@
 }*/
 /*.text-align {
 	text-align: center;
-}
+}*/
 
 
 
-.front, .back {
+/*.front, .back {
 	transition: -webkit-transform 1s;
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
@@ -99,9 +103,9 @@
 .front {
 	position: absolute;
 	text-align: center;
-}
+}*/
 
-.back {
+/*.back {
 	-webkit-transform: rotateY(-180deg);
 }*/
 /*
