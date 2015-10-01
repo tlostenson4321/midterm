@@ -19,16 +19,6 @@ body {
 	background-color: transparent;
 	color: white;
 }
-.nav {
-	text-align: center;
-}
-.nav-item {
-	/*display: inline-block;*/
-	background-color: rgba(234, 220, 12, 0.7);
-	margin: 10px 15px;
-	padding: 10px;
-	text-shadow:none;
-}
 .head {
 	background-color: rgba(52, 52, 119, 0.5);
 	color: white;
@@ -82,8 +72,8 @@ body {
 }
 
 .yellow-main-button {
-	margin-top: 40px;
-	margin-left: 10px;
+
+	margin: 40px 0px 60px 10px;
 	border:1px solid #1515bf;
 	background-color: rgba(234, 220, 12, 0.8);
 	color: #1515bf;
@@ -128,17 +118,20 @@ body {
 	color: white;
 
 }
-.content-list {
-	list-style-type: none;
-	text-align: center;
-    padding: 0;
-  
-	
-}
-.content-item {
-    margin: 10px 0px;
 
-}
 .brewery-head{
 	background-color: rgba(164, 0, 0,0.7);
+}
+accordion span{
+	font-size: 2rem
+}
+accordion h4{
+	margin-top: 30px;
+	text-align: center;
+}
+.accordion-head{
+	text-align: left;
+}
+accordion {
+	background-color: none;
 }

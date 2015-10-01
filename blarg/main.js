@@ -130,17 +130,25 @@ angular.module('beerApp')
 		$scope.beers = beerFactory.beerList
 		$scope.breweries = beerFactory.breweryList
 		$scope.cities = cityFactory.cityArray
+		$scope.showMe = false
 
+		$scope.clickedMe = function(){
+			$scope.showMe = true
+
+		}
 		$scope.criteriaMatch = function(beerType, city){
 		return function( brewery ){
 			
 		var isMatch = false;
-		brewery.beersss.forEach(function(brewBeers){
-			if (brewBeers.name === beerType && brewery.city === city){
-				isMatch = true
-			}
+		if (beerType && city){
+			brewery.beersss.forEach(function(brewBeers){
+				
+				if (brewBeers.name === beerType.name && brewery.location === city.name){
+					isMatch = true
+				}
 
-		})
+			})
+		}
 
 		return isMatch
 	}
