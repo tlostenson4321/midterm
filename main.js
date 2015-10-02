@@ -1,1 +1,0 @@
-// need an alert to make sure people entering site are 21!
