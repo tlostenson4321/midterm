@@ -48,18 +48,21 @@
 	margin: 10px;
 }
 
+accordion div {
+	background-color: rgba(52, 52, 119, 0.3)!important;
+
+}
+accordion span{
+	font-size: 1.5rem;
+	color: white!important;
+}
 
 
-/*.lightbox-select {
-	margin: 5px;
-}*/
 
 
 
 /*Check this @ home.
-.select-option {
-	color:#1515bf;
-}*/
+
 /*.input {
 	width: 50vw;
 	border-radius: 5px;

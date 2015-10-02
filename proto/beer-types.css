@@ -28,7 +28,7 @@
 	margin-left: 100px;
 	top:0px;
 	padding: 20px;
-	padding-top: 60px;
+	padding-top: 80px;
 }
 .inner-listitem {
 	display: block;
@@ -44,9 +44,13 @@
 	clear:both;
 }
 
-accordion span{
-	color:white;
-}
+accordion div {
+	background-color: rgba(164, 0, 0, 0.3)!important;
 
+}
+accordion span{
+	font-size: 1.5rem;
+	color: white!important;
+}
 
 

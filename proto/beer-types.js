@@ -140,7 +140,7 @@ angular.module('beerApp')
 
 
 angular.module('beerApp')
-.controller('beerTypeController', ['$scope', '$anchorScroll', '$timeout', '$location', 'beerFactory', function($scope, $anchorScroll, $timeout, $location, beerFactory){
+.controller('beerTypeController', ['$scope', 'beerFactory', function($scope, beerFactory){
 	
 
 	$scope.beers = beerFactory.beerList
