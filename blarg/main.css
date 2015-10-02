@@ -123,15 +123,18 @@ body {
 	background-color: rgba(164, 0, 0,0.7);
 }
 accordion span{
-	font-size: 2rem
+	font-size: 2rem;
+	color: black;
 }
-accordion h4{
-	margin-top: 30px;
-	text-align: center;
+accordion div {
+	background-color: rgba(52, 52, 119, 0.5);
+
 }
-.accordion-head{
-	text-align: left;
+accordion h4 {
+	background-color: rgba(52, 52, 119, 0.5)
 }
-accordion {
-	background-color: none;
+
+accordion{
+	background-color:black
 }
+
