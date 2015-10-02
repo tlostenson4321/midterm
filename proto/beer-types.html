@@ -118,7 +118,7 @@
 					</ul>
 					</p>
 				<h4>It has a {{beer.strength}} flavor.</h4>
- 				<accordion close-others="oneAtATime">
+ 				<accordion close-others="oneAtATime" class="col-xs-12">
     				<accordion-group heading="Breweries that carry this beer" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled" >
     					<ul class="list-unstyled">
     						<li ng-repeat="brewery in breweries | filter:criteriaMatch(beer.name)">

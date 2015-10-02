@@ -46,7 +46,6 @@
 
 
 
-
 <!-- Beer types  -->
 <form>
 <div class="container-fluid">
@@ -60,7 +59,7 @@
  </select>
  </div>
 
-filter beer in beers | filter : {name: selectedBeer.name} 
+
 
 
  <!-- Location -->
@@ -69,16 +68,60 @@ filter beer in beers | filter : {name: selectedBeer.name}
  </div>
  <div class="row">
   <select ng-change="otherTest()" class="select col-xs-10 col-sm-11" ng-model="selectedCity" ng-options="cities.name for cities in cities">
-    <option value="" class="select-option"> -Select One-</option>
+    <option value=""> -Select One-</option>
   </select>
   </div>
 
   <div class="row">
-  <input ng-click="beerChosen()" type="submit" class="btn yellow-main-button col-xs-10  col-sm-11">
+  <input ng-click="clickedMe()" type="submit" class="btn yellow-main-button col-xs-10  col-sm-11">
   </div>
 </div>
 </form>
-<!-- http://www.tapfourteen.com/beer-list Look here for brewery names and beers. -->
+
+
+    <!--   <li ng-repeat="beer in beers | filter : {name: selectedBeer.name}"> -->
+
+<div class="beer-flip" ng-show ="showMe">
+  <div class="container-fluid no-padding no-margin">
+    <div class="row">
+    <ul class="list-unstyled col-xs-12 no-padding">
+      <!-- added the class for when ng-click is added it will work separately. -->
+      <li ng-repeat="beer in beers | filter : {name: selectedBeer.name}">
+        <accordion class="col-xs-10 col-sm-11 margin">
+            <accordion-group heading="{{beer.name}}" >
+              <ul class="list-unstyled">
+                <li ng-repeat="brewery in breweries | filter : criteriaMatch(selectedBeer, selectedCity)">
+                <accordion>
+                  <accordion-group heading="{{brewery.name}}" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+                
+                  <p>They are located at: {{brewery.address}}</p>
+                  <p>This is their webiste <a class="link"href="{{brewery.website}}">{{brewery.website}}</a></p>
+                  <p> They specialize in:
+                  <ul class="list-unstyled">
+                    <li ng-repeat="specialty in brewery.specialties"> {{specialty}}
+                    </li>
+                  </ul>
+                  </p>
+                  </accordion-group>
+                  </accordion>
+                </li>
+              </ul>
+            
+      
+            </accordion-group>
+        </accordion>
+      </li>
+    </ul>
+        
+    </div>
+    
+  </div>
+
+
+</div>
+
+
+
 
 
 

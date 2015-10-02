@@ -10,8 +10,7 @@
 }
 
 .yellow-main-button {
-	margin-top: 40px;
-	margin-left: 10px;
+	margin: 40px 0px 60px 10px;
 	border:1px solid #1515bf;
 	background-color: rgba(234, 220, 12, 0.8);
 	color: #1515bf;
@@ -48,8 +47,6 @@
 .lightbox-btn {
 	margin: 10px;
 }
-
-
 
 
 

@@ -67,3 +67,17 @@ body {
 .link-big {
 	font-size: 1.3rem;
 }
+accordion div {
+	background-color: rgba(164, 0, 0, 0.3)!important;
+
+}
+accordion span{
+	font-size: 2rem;
+	color: white!important;
+}
+.margin{
+	margin-left: 10px 
+}
+.brewery-head{
+	background-color: rgba(164, 0, 0,0.7);
+}
